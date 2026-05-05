@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Nutrigenes - Sistemas Unificados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #08221c; 
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(18, 48, 15, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: #06d463; 
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            background: rgba(18, 48, 15, 0.8);
+        }
+        .accent-text {
+            color: #43f320; 
+        }
+        .icon-container {
+            background: rgba(67, 243, 32, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold tracking-tight mb-2 uppercase italic">Painel <span class="accent-text">Nutrigenes</span></h1>
+        <p class="text-slate-400 text-sm">Painel Unificado de Operações e Gestão</p>
+    </div>
+
+    <!-- Container dos Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl">
+        
+        <!-- Sistemas Core -->
+        <a href="https://sistema.nutrigenes.com.br/login" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-desktop text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Sistema Interno</h2>
+            <p class="text-xs text-slate-400">Gestão Administrativa</p>
+        </a>
+
+        <a href="https://expedicao.nutrigenes.com.br/login" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-truck-loading text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Expedição</h2>
+            <p class="text-xs text-slate-400">Logística e Despacho</p>
+        </a>
+
+        <a href="https://hub.nutrigenes.com.br/pedidos" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-project-diagram text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Hub Pedidos</h2>
+            <p class="text-xs text-slate-400">Central de Vendas</p>
+        </a>
+
+        <a href="https://erp3.webmaissistemas.com.br/csp/ysjujjtw/system/www/principal.csp" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-database text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">ERP WebMais</h2>
+            <p class="text-xs text-slate-400">Gestão de Recursos</p>
+        </a>
+
+        <!-- Comunicação, Site e Agenda -->
+        <a href="https://nutrigenes.com.br/wp-login.php" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fab fa-wordpress text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Painel Site Nutrigenes</h2>
+            <p class="text-xs text-slate-400">Painel do E-commerce</p>
+        </a>
+
+        <a href="https://email.nutrigenes.com.br/" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-envelope text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">E-mail</h2>
+            <p class="text-xs text-slate-400">Webmail Corporativo</p>
+        </a>
+
+        <a href="https://calendar.google.com/calendar/u/0/r/week/2026/5/3" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-calendar-alt text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Agenda</h2>
+            <p class="text-xs text-slate-400">Google Calendar</p>
+        </a>
+
+        <!-- Financeiro e Marketplaces -->
+        <a href="https://dash.pagar.me/" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-file-invoice-dollar text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Pagar.me</h2>
+            <p class="text-xs text-slate-400">Gateways de Pagamento</p>
+        </a>
+
+        <a href="https://www.mercadolivre.com.br/" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-shopping-bag text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Mercado Livre</h2>
+            <p class="text-xs text-slate-400">Loja Oficial</p>
+        </a>
+
+        <a href="https://www.mercadopago.com.br/home" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-wallet text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Mercado Pago</h2>
+            <p class="text-xs text-slate-400">Gestão Financeira</p>
+        </a>
+
+        <!-- Planilhas e Dados -->
+        <a href="https://docs.google.com/spreadsheets/d/1p0shpDELQOjudXwV2HvPhpDkypa95fv2wwO0WXD1Ya0/edit" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-tags text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Precificação</h2>
+            <p class="text-xs text-slate-400">Planilha de Custos</p>
+        </a>
+
+        <a href="https://docs.google.com/spreadsheets/d/1Xl_Psf9PmOPwP2Wc7Lg2g-LEqwp56cmooRR4-jvUbk0/edit" target="_blank" class="glass-card p-5 rounded-xl flex flex-col items-center text-center">
+            <div class="w-12 h-12 icon-container rounded-lg flex items-center justify-center mb-3">
+                <i class="fas fa-chart-line text-xl accent-text"></i>
+            </div>
+            <h2 class="text-sm font-bold uppercase tracking-wider mb-1">Vendas</h2>
+            <p class="text-xs text-slate-400">Relatório de Performance</p>
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto pt-10 text-slate-500 text-[10px] text-center uppercase tracking-widest">
+        &copy; 2026 Nutrigenes — <span class="accent-text italic">AzDev Coder</span> Solution
+    </footer>
+
+</body>
+</html>
